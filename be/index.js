@@ -15,9 +15,10 @@ require("dotenv").config();
 // Middleware
 // app.use(bodyParser.json());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors()); // This will enable CORS for all routes
 
+// const urlencodedParser = bodyParser.urlencoded({ extended: false });
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
 
