@@ -13,7 +13,7 @@ const ProductManagement = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/products');
+      const response = await axios.get('https://sufiya-admin.vercel.app/products');
       setProducts(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -31,7 +31,7 @@ const ProductManagement = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/products/${id}`);
+      await axios.delete(`https://sufiya-admin.vercel.app/products/${id}`);
       fetchProducts();
     } catch (error) {
       console.error('Error deleting product:', error);
