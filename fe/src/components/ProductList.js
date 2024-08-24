@@ -8,7 +8,7 @@ const ProductList = ({ onEdit, refreshTrigger }) => {
   const [products, setProducts] = useState([]);
 
   const fetchProducts = () => {
-    axios.get('http://localhost:5000/products')
+    axios.get('https://sufiya-admin.vercel.app/products')
       .then(response => {
         setProducts(response.data);
       })
@@ -22,7 +22,7 @@ const ProductList = ({ onEdit, refreshTrigger }) => {
   }, [refreshTrigger]);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:5000/products/${id}`)
+    axios.delete(`https://sufiya-admin.vercel.app/products/${id}`)
       .then(() => {
         // Re-fetch products after deleting
         fetchProducts();
