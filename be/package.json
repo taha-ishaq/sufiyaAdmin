@@ -2,6 +2,9 @@
   "name": "be",
   "version": "1.0.0",
   "main": "index.js",
+  "engine": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon server.js",
