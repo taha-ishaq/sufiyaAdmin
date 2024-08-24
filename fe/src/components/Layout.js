@@ -13,7 +13,7 @@ const Layout = ({ loggedIn, onLoginSuccess, onLogout }) => {
     // Polling or socket connection to check for new order data
     const checkForNewOrderData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/orders/new-data'); // Endpoint for checking new data
+        const response = await axios.get('https://sufiya-admin.vercel.app/api/orders/new-data'); // Endpoint for checking new data
         if (response.data.hasNewData) {
           setHasNewOrderData(true);
         } else {
