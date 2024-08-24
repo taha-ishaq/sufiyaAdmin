@@ -11,7 +11,7 @@ const Login = ({ onLoginSuccess }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/admin/login', {
+      const response = await axios.post('https://sufiya-admin.vercel.app/admin/login', {
         username,
         password,
       });
