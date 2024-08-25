@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 const sendOrderNotification = async (orderDetails) => {
     const mailOptions = {
         from: EMAIL_USER,
-        to: ['tahaishaq7346@gmail.com', 'mahrukhazhar3@gmail.com'], // List of recipients
+        to: ['tahaishaq7346@gmail.com', 'mahrukhazhar3@gmail.com','pk7336026@gmail.com'], // List of recipients
         subject: 'New Order Received',
         text: `A new order has been placed with the following details:\n\n${JSON.stringify(orderDetails, null, 2)}`
     };
